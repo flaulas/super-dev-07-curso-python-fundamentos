@@ -2,8 +2,22 @@ from src import variaveis
 from src import funcoes
 from src import conversoes
 from src import input_usuario
+from src.inputs import exemplo_questionary
+from src.dicionarios import exemplo_dicionario_basico # import da função
+from src import dicionarios
+from src.listas import exemplo_lista_basica, exemplo_solicitar_dados_usuario_otimizado # import do arquivo
+
 
 def main():
+    # do arquivo quero executar uma função
+    # dicionarios.exemplo_dicionario_basico()
+    
+    # executar a função
+    # exemplo_dicionario_basico()
+    # exemplo_questionary.exemplos()
+
+    exemplo_solicitar_dados_usuario_otimizado()
+
     # Exemplos de variáveis
     # variaveis.exemplo_strings()
     # variaveis.apresentar_dados_paciente()
@@ -12,7 +26,7 @@ def main():
 
     # # Exemplos de funções 
     # funcoes.funcao_executar()
-    funcoes.calcular_valor_compra_paraguai()
+    # funcoes.calcular_valor_compra_paraguai()
 
     # # Exemplos de conversões
     # conversoes.converter_str_para_int()
