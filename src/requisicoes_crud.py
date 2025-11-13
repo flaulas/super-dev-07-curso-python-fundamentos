@@ -54,7 +54,6 @@ def listar_clientes():
         tabela.add_column("Telefone")
         tabela.add_column("Crédito")
 
-        
         for i in range(0, quantidade_clientes):
             cliente = clientes[i] # pegar da lista o cliente por uma posição
             nome = cliente.get("nome")

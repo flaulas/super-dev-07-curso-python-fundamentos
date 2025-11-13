@@ -103,4 +103,3 @@ def exemplo_lista_com_dicionario():
 
     print(json.dumps(imovel, indent=4))
 
-exemplo_lista_com_dicionario()

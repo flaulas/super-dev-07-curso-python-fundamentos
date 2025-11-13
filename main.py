@@ -6,9 +6,12 @@ from src.inputs import exemplo_questionary
 from src.dicionarios import exemplo_dicionario_basico # import da função
 from src import dicionarios
 from src.listas import exemplo_lista_basica, exemplo_solicitar_dados_usuario_otimizado # import do arquivo
-
+from src.exericicio_pratico_json import resolucao
+from src.orientacao_objetos.classes import exemplo_01 # exemplo_01()
+from src.orientacao_objetos import classes  # classes.exemplo_01()
 
 def main():
+    resolucao.resolver()
     # do arquivo quero executar uma função
     # dicionarios.exemplo_dicionario_basico()
     
@@ -16,7 +19,7 @@ def main():
     # exemplo_dicionario_basico()
     # exemplo_questionary.exemplos()
 
-    exemplo_solicitar_dados_usuario_otimizado()
+    # exemplo_solicitar_dados_usuario_otimizado()
 
     # Exemplos de variáveis
     # variaveis.exemplo_strings()
