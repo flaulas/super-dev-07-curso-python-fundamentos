@@ -150,6 +150,15 @@ def limpar_tela():
 console = Console()
 desenvolvedoras: List[Desenvolvedora] = []
 
+def menu_sistema():
+    menu_geral = ""
+    while menu_geral != "sair":
+        menu_geral = questionary.select("Escolha o sistema", choices=["Desenvolvedora", "Sair"]).ask().lower()
+        limpar_tela()
+        if menu_geral == "desenvolvedora":
+            exemplo_crud_lista_objetos()
+    
+
 def exemplo_crud_lista_objetos():
     menu = ""
     while menu != "sair":
@@ -201,4 +210,23 @@ def listar_desenvolvedoras():
     
     console.print(table)
 
-exemplo_crud_lista_objetos()
+menu_sistema()
+
+# Ex. 1: Criar uma crud de Animal e seu Dono
+# Criar uma classe chamada Dono com os seguintes atributos abaixo:
+#   - Nome
+#   - CPF
+# Criar uma classe chamada Animal com os seguintes atributos abaixo:
+# - Raça
+# - Dono
+# - Data de Nascimento
+# Fazer o CR(Create/Read) do Animal solicitando os dados de seu dono também
+# Ex. 2: Modificar o conteúdo da classe Dono acrescentando os atributos abaixo:
+# -  Bairro, Rua, Número
+# Alterar o CR(Create/Read) para solicitar os novos dados do dono
+# Modificar o conteúdo da classe Animal acrescentando os atributos abaixo:
+#   Peso
+#   Altura
+#   Sexo
+#   Cor
+#   Origem da Raça
